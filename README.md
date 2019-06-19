@@ -1,11 +1,11 @@
 <h1>Flight Prices</h1>
 <h2> Zde odevzdávám zadání které jsem dostal v rámci výběrového řízení. </h2>
 
-Pro sestavení projektů se držte následujících kroků:
+Pro sestavení projektu se držte následujících kroků:
 
 **Naklonovat repository**
 
-<code> git clone https://github.com/onenKokos/Ukazka.git </code> 
+> <code> git clone https://github.com/onenKokos/Ukazka.git </code> 
 
 **V adresáři kde je soubor package.json spusťte z příkazové řádky pro instalaci potřebných modulů**
 > <code> npm install </code>
@@ -22,5 +22,5 @@ Pro sestavení projektů se držte následujících kroků:
 <ul> 
 <li>NeGETuje to</li>
 <li>Když vyberu jedno letiště odkud, neubere se to z výběru kam a vice versa</li>
-<li>Když prohodím odkud a kam tak se neaktualizuje querystring a neposle nový request</li>
+<li>Když prohodím odkud a kam tak se neaktualizuje querystring a nepošle nový request</li>
 </ul>

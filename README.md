@@ -17,3 +17,10 @@ Pro sestavení projektů se držte následujících kroků:
 **Pro spuštení webpack dev serveru zadejte** 
 
 > <code> npm run start:dev </code>
+
+<h2>Největší nedostatky</h2>
+<ul> 
+<li>NeGETuje to</li>
+<li>Když vyberu jedno letiště odkud, neubere se to z výběru kam a vice versa</li>
+<li>Když prohodím odkud a kam tak se neaktualizuje querystring a neposle nový request</li>
+</ul>

@@ -21,13 +21,16 @@
         height: 29px;
         fill: #fff;
         cursor: pointer;
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
 
         &:hover {
-            transition: 0.2s ease-in-out;
             transform: rotate(-180deg);
+            transition: 0.3s ease-in-out;            
         }
     }
 }
+
 
 .container__input {
     padding: 20px 0;
@@ -48,7 +51,8 @@
 
 .container__date {
     text-align: right;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
 
     input {
         border-radius: 6px;
@@ -94,5 +98,8 @@
 }
 
 @media screen and ( min-width: 1170px ) {
-   
+    .container__select, .container__table, .container__date {
+        width: 80%;
+        margin: auto;
+    }
 }

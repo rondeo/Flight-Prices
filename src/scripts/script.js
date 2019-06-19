@@ -2,7 +2,6 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-
 // $ should be locally scoped
 
 (function($) {
@@ -65,6 +64,7 @@ window.$ = $;
             text: string
         }).appendTo("#to");
     }
+
 
     //
     // Swap destinations
@@ -148,11 +148,12 @@ window.$ = $;
                         price = res[item].price,
                         seats = res[item].seats,
                         duration = convertMinutes(parseInt(res[item].duration)),
-                        string = "<tr><td>" + date + "</td><td>" + price + " CZK </td><td>" + seats + "</td><td>" + duration + "</td>";
-                    
-                    $("#result").append(string);
+                        string = string + "<tr><td>" + date + "</td><td>" + price + " CZK </td><td>" + seats + "</td><td>" + duration + "</td>";
                 }
             }
+            $("#result > tbody").children().first().siblings().remove();
+            console.log($("#result > tbody"));
+            $("#result > tbody").append(string);
         }
     });
 

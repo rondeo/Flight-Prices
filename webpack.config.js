@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
-let FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+//let FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = {
     module: {
@@ -51,6 +51,6 @@ module.exports = {
             filename:"[name].css",
             chunkFilename: "[id].css"
         }),
-        new FaviconsWebpackPlugin(path.resolve(__dirname, './src/tagboyfav.png'))
+        //new FaviconsWebpackPlugin(path.resolve(__dirname, './src/tagboyfav.png'))
     ]
 }

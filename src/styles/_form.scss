@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.container {
+    padding: 15px;
+    //max-width: 1170px;
+
+    background: url('~images/background.jpg') 50% 0px / 100% no-repeat,
+                url('~images/backgroundrepeat.png') 50% 0px / 100% repeat-y;
+
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 100px;
+}
+
+.container__button {
+    width: 100%;
+    text-align: center;
+
+    svg {
+        width: 37px;
+        height: 29px;
+        fill: #fff;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.2s ease-in-out;
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.container__input {
+    padding: 20px 0;
+
+    select {
+        width: 100%;
+        height: 58px;
+        border-radius: 6px;
+        font-size: 20px;
+        padding-left: 6px;
+        color: #796767;
+
+        &:hover {
+            background-color: rgb(245, 245, 245);
+        }
+    }
+}
+
+.container__date {
+    text-align: right;
+    padding: 20px 0;
+
+    input {
+        border-radius: 6px;
+        height: 24px;
+        padding: 6px;
+    }
+
+    span {
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+        padding-right: 12px;
+    }
+}
+
+.container__table {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    
+    table {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    td {
+        padding: 5px;
+    }
+}
+
+
+@media screen and ( min-width: 750px ) {
+        .container__select {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            svg {
+                position: relative;
+                top: 34px;
+            }
+        }
+}
+
+@media screen and ( min-width: 1170px ) {
+   
+}

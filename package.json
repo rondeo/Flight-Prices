@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/onenKokos/Flight-Prices#readme",
   "dependencies": {
-    "npm": "^6.9.0",
     "tar": ">=4.4.2"
   },
   "devDependencies": {
